@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Home, ArrowLeft } from "lucide-react";
+import webLogo from "/assets/web_logo.png";
 import { Button } from "@/components/ui/Button";
 
 export default function NotFoundPage() {
@@ -12,7 +13,7 @@ export default function NotFoundPage() {
         className="text-center max-w-md"
       >
         <img
-          src="/assets/web_logo.png"
+          src={webLogo}
           alt="Pondy Belle"
           className="w-20 h-20 rounded-2xl object-cover mx-auto mb-6 shadow-lg shadow-pondy-500/30"
         />

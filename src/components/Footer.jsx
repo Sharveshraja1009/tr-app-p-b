@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Instagram, Twitter, Facebook, Mail, MapPin, Phone } from "lucide-react";
+import webLogo from "/assets/web_logo.png";
 
 const footerLinks = [
   {
@@ -49,7 +50,7 @@ export default function Footer() {
           <div className="col-span-2 lg:col-span-2">
             <Link to="/" className="flex items-center gap-2 mb-5">
               <img
-                src="/assets/web_logo.png"
+                src={webLogo}
                 alt="Pondy Belle"
                 className="w-10 h-10 rounded-xl object-cover"
               />

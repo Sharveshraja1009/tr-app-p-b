@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Sun, Moon } from "lucide-react";
+import webLogo from "/assets/web_logo.png";
 import { useTheme } from "@/context/ThemeContext";
 import { useScrollDirection } from "@/hooks/useScrollDirection";
 import { cn } from "@/lib/utils";
@@ -40,7 +41,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3 group">
             <img
-              src="/assets/web_logo.png"
+              src={webLogo}
               alt="Pondy Belle"
               className="w-11 h-11 sm:w-14 sm:h-14 rounded-xl object-cover shadow-lg shadow-pondy-500/30 group-hover:shadow-pondy-500/50 transition-shadow"
             />

@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 
 export default defineConfig({
-  base: "/pondy-belle/",
+  base: "/tr-app-p-b/",
   plugins: [react()],
   resolve: {
     alias: {
